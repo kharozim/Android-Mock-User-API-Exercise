@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".fragment.RegisterFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="New Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btRegister"/>
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btLogin"/>
+
+
+</LinearLayout>
