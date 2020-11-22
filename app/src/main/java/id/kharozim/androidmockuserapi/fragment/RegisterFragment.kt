@@ -35,7 +35,7 @@ class RegisterFragment : Fragment() {
                     ).show()
                 } else {
                     saveSession(
-                        tieEmail.text.toString(),
+                        tieName.text.toString(),
                         tieEmail.text.toString(),
                         tiePassword.text.toString()
                     )

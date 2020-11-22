@@ -6,16 +6,41 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import id.kharozim.androidmockuserapi.R
+import id.kharozim.androidmockuserapi.databinding.FragmentProfileBinding
+import id.kharozim.androidmockuserapi.helper.Constant
+import id.kharozim.androidmockuserapi.helper.PreferencesHelper
 
 class ProfileFragment : Fragment() {
 
-
+private lateinit var binding : FragmentProfileBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+       binding = FragmentProfileBinding.inflate(inflater, container, false).apply {
+           val sharepref = PreferencesHelper(requireContext())
+
+           tvName.text = sharepref.getString(Constant.PREF_NAME)
+           tvEmail.text = sharepref.getString(Constant.PREF_EMAIL)
+           tvPassword.text = sharepref.getString(Constant.PREF_PASSWORD)
+
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return binding.root
     }
 
 }
