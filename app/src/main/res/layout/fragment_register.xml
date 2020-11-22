@@ -19,7 +19,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tieName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -32,34 +33,38 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tieEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
         android:layout_marginBottom="8dp"
         android:hint="New Password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiePassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:layout_gravity="center"
+        android:id="@+id/btRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:id="@+id/btRegister"/>
+        android:layout_gravity="center"
+        android:text="Register" />
+
     <Button
-        android:layout_gravity="center"
+        android:id="@+id/btLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/btLogin"/>
+        android:layout_gravity="center"
+        android:text="Login" />
 
 
 </LinearLayout>

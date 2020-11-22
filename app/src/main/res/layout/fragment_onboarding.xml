@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".fragment.OnboardingFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginBottom="50dp"
+        android:text="On Boarding Fragment" />
+
     <Button
         android:id="@+id/btLogin"
         android:layout_width="wrap_content"

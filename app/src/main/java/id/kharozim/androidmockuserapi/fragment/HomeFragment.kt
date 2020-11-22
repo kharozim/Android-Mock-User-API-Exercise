@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import id.kharozim.androidmockuserapi.R
@@ -37,6 +38,23 @@ class HomeFragment : Fragment() {
                 TabLayoutMediator(tlHomeFragment, vpHomeFragment) { tab, index ->
                     tab.text = pagers[index].title
                 }.attach()
+
+
+
+            BottomNavigationView.OnNavigationItemSelectedListener { item ->
+                when(item.itemId) {
+                    R.id.menuUsers -> {
+                        pagers[0]
+                        true
+                    }
+//                    R.id.item2 -> {
+//                        // Respond to navigation item 2 click
+//                        true
+//                    }
+                    else -> false
+                }
+            }
+
         }
         return binding.root
     }
